@@ -7,7 +7,7 @@
 # 💥 AllahClientRecode
 >  The best cheat client for minecraft according to my cat, but now rewritten
 
-![Russian Translate](README_RU.md)
+![Russian Version](README_RU.md)
 
 ![screenshot](./screenshot.png)
 
