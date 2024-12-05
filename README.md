@@ -11,7 +11,7 @@
 
 ![screenshot](./screenshot.png)
 
-This cheat is based on Minecraft **1.12.2**, but currently supports versions from 1.8 to 1.21. Also, it has **OptiFine** for smoother gameplay and shader support. Pretty good bypasses for KillAura, customization of modules from chat (```#help``` command) (including appearance), all of this is **AllahClient**.
+This cheat is based on Minecraft **1.12.2**, but currently supports versions from 1.8 to 1.21. Also, it has **OptiFine** for smoother gameplay and shader support. Pretty good bypasses for KillAura, customization of modules from chat (```#help``` command) (including appearence), all of this is **AllahClient**.
 
 ## 👾 Modules
 > List of all client modules
