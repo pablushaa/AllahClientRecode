@@ -14,7 +14,6 @@ import com.ibm.icu.impl.ICUService.Key;
 import com.ibm.icu.text.UFormat;
 import com.viaversion.viaversion.libs.snakeyaml.scanner.Scanner;
 
-import javafx.scene.shape.Line;
 import ru.pablusha.AllahRecode.AllahClient;
 import ru.pablusha.AllahRecode.ModuleSys.Module;
 import ru.pablusha.AllahRecode.Modules.Combat.KillAura;

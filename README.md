@@ -13,6 +13,8 @@
 
 This cheat is based on Minecraft **1.12.2**, but currently supports versions from 1.8 to 1.21. Also, it has **OptiFine** for smoother gameplay and shader support. Pretty good bypasses for KillAura, customization of modules from chat (```#help``` command) (including appearence), all of this is **AllahClient**.
 
+![Installation guide](INSTALLATION.md)
+
 ## 👾 Modules
 > List of all client modules
 
