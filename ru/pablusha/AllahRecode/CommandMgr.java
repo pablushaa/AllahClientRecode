@@ -30,11 +30,15 @@ public class CommandMgr {
 			break;
 			
 		case "ip":
-			if (mc.player.isServerWorld()) {
-				ChatUtil.sendClientMessage("IP: " + mc.getCurrentServerData().serverIP);
-			} else {
-				ChatUtil.sendClientMessage("You are not in the server");
-			}			
+			try {
+				if (mc.player.isServerWorld()) {
+					ChatUtil.sendClientMessage("IP: " + mc.getCurrentServerData().serverIP);
+				} else {
+					ChatUtil.sendClientMessage("You are not in the server");
+				}			
+			} catch (Exception e) {
+				ChatUtil.sendClientMessage("error im debil");
+			}
 			break;
 			
 		case "set":
