@@ -43,15 +43,15 @@ public class TargetHUD extends Module {
         		bd = bd.setScale(2, RoundingMode.HALF_UP);
         		dist = bd.doubleValue();
         		
-        		RoundUtil.drawRoundedRect(mc.displayWidth / 4f - 100, mc.displayHeight / 2f - 100, mc.displayWidth / 4f + 100, mc.displayHeight / 2f - 50, AllahClient.corner, 0xCF0F0F0F);
-        		RoundUtil.drawRoundedOutline(mc.displayWidth / 4f - 100, mc.displayHeight / 2f - 100, mc.displayWidth / 4f + 100, mc.displayHeight / 2f - 50, AllahClient.corner, 2, 
-        				HUD.rainbow(AllahClient.rainbowDelay, false));
-        		FontUtils.normal.drawString(target.getName(), mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 90, -1);
+        		RoundUtil.drawRoundedRect(mc.displayWidth / 4f - 100, mc.displayHeight / 2f - 110, mc.displayWidth / 4f + 100, mc.displayHeight / 2f - 60, AllahClient.corner, 0xCF0F0F0F);
+        		RoundUtil.drawRoundedOutline(mc.displayWidth / 4f - 100, mc.displayHeight / 2f - 110, mc.displayWidth / 4f + 100, mc.displayHeight / 2f - 60, AllahClient.corner, 2, 
+        				HUD.rainbow(AllahClient.rainbowDelay, true));
+        		FontUtils.normal.drawString(target.getName(), mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 100, -1);
         		FontUtils.normal.drawString("HP: " + (int) health + " / " + (int) target.getMaxHealth() + ", Dist: " + dist + "m", 
-        				mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 78, -1);
+        				mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 88, -1);
         		
-        		RenderUtil.drawRect(mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 65, 120, 5, new Color(255,0,0,255).getRGB());
-        		RenderUtil.drawRect(mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 65, 120 / target.getMaxHealth() * health, 5, new Color(127,106,0,255).getRGB());
+        		RenderUtil.drawRect(mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 75, 120, 5, new Color(255,0,0,255).getRGB());
+        		RenderUtil.drawRect(mc.displayWidth / 4f - 50, mc.displayHeight / 2f - 75, 120 / target.getMaxHealth() * health, 5, new Color(127,106,0,255).getRGB());
         		try {
             		drawHead(Objects.requireNonNull(mc.getConnection()).getPlayerInfo(target.getUniqueID()).getLocationSkin(), 10, 10);
         		}  catch (Exception ignored) {}
@@ -61,6 +61,6 @@ public class TargetHUD extends Module {
 	public void drawHead(ResourceLocation skin, int width, int height) {
 		GL11.glColor4f(1, 1, 1, 1);
 	    mc.getTextureManager().bindTexture(skin);
-	    Gui.drawScaledCustomSizeModalRect(mc.displayWidth / 4f - 90, mc.displayHeight / 2f - 90, 8, 8, 8, 8, 30, 30, 64, 64);
+	    Gui.drawScaledCustomSizeModalRect(mc.displayWidth / 4f - 90, mc.displayHeight / 2f - 100, 8, 8, 8, 8, 30, 30, 64, 64);
 	}
 }

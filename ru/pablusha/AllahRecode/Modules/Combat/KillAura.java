@@ -67,12 +67,12 @@ public class KillAura extends Module {
 			if (rand_y <= -0.6) { rand_y += 0.5; }
 			
 			if (random.nextBoolean()) { rand_x += 0.02; } else { rand_x -= 0.02; }
-			if (rand_x >= 0.3) { rand_x -= 0.1; }
-			if (rand_x <= -0.3) { rand_x += 0.1; }
+			if (rand_x >= 0.25) { rand_x -= 0.05; } // мб в будущем сделаю так, чтобы это можно было через конфиг редачить
+			if (rand_x <= -0.25) { rand_x += 0.05; }
 			
 			if (random.nextBoolean()) { rand_z += 0.02; } else { rand_z -= 0.02; }
-			if (rand_z >= 0.3) { rand_z -= 0.1; }
-			if (rand_z <= -0.3) { rand_z += 0.1; }
+			if (rand_z >= 0.25) { rand_z -= 0.05; }
+			if (rand_z <= -0.25) { rand_z += 0.05; }
 		}
 		
         double x = entity.posX - mc.player.posX + rand_x;

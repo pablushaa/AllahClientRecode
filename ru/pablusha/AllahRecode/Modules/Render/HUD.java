@@ -34,10 +34,10 @@ public class HUD extends Module {
         ScaledResolution sr = new ScaledResolution(mc);
         String lol = AllahClient.clientName + " | " + Minecraft.getDebugFPS() + " FPS"; // гениальный нейминг moment 
         RoundUtil.drawSelectRoundedRect(0, 0, fr.getStringWidth(lol) + 20, 30, 0, 0, AllahClient.corner, 0, 0xCF0F0F0F);
-        RoundUtil.drawSelectRoundedOutline(-2f, -2f, fr.getStringWidth(lol) + 20, 30, 0, 0, AllahClient.corner, 0, 2, HUD.rainbow(AllahClient.rainbowDelay, false));
+        RoundUtil.drawSelectRoundedOutline(-2f, -2f, fr.getStringWidth(lol) + 20, 30, 0, 0, AllahClient.corner, 0, 2, HUD.rainbow(AllahClient.rainbowDelay, true));
         
         RoundUtil.drawSelectRoundedRect(mc.displayWidth / 2 - width, 0, mc.displayWidth / 2, box_y, 0, AllahClient.corner, 0, 0, 0xCF0F0F0F);
-        RoundUtil.drawSelectRoundedOutline(mc.displayWidth / 2 - width, 0, mc.displayWidth, box_y, 0, AllahClient.corner, 0, 0, 2, HUD.rainbow(AllahClient.rainbowDelay, false));
+        RoundUtil.drawSelectRoundedOutline(mc.displayWidth / 2 - width, 0, mc.displayWidth, box_y, 0, AllahClient.corner, 0, 0, 2, HUD.rainbow(AllahClient.rainbowDelay, true));
         
         FontUtils.normal.drawStringWithShadow(lol, 5, 5, -1);
         FontUtils.normal.drawStringWithShadow("Salam, §6" + mc.getSession().getUsername(), 5,
