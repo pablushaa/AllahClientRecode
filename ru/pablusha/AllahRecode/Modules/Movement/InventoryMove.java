@@ -7,7 +7,7 @@ import net.minecraft.client.settings.KeyBinding;
 import ru.pablusha.AllahRecode.ModuleSys.Module;
 import ru.pablusha.AllahRecode.ModuleSys.Type;
 
-public class InventoryMove extends Module {
+public class InventoryMove extends Module { // module by @strokegmd (https://github.com/strokegmd)
 	public InventoryMove() {
 		super("InventoryMove", 0x00, Type.Movement);
 	}
